@@ -76,6 +76,15 @@ export class AppComponent {
     this.wipeValue = false;
   }
 
+  crearValue() {
+    this.valueDisplay = '0';
+  }
+
+  alter() {
+    const result = parseFloat(this.valueDisplay) * -1;
+    this.valueDisplay = result.toString();
+  }
+
   calculate() {
     switch (this.operacao) {
       case '/':
