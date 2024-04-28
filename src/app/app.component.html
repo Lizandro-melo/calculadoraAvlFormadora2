@@ -176,14 +176,36 @@
   }
 </style>
 
-<main class="container-fluid d-flex">
+<main class="container-fluid d-flex flex-column">
+  <div class="container-fluid row">
+    <!-- Lado Esquerdo (20%) -->
+    <div class="col-4 float-left d-flex flex-column">
+      <span> Turma ADS0303N </span>
+      <span> Turno: noite </span>
+      <span> Unidade: Bonsucesso </span>
+    </div>
+
+    <!-- Lado Centro (8%) -->
+    <div class="col-4 float-left text-center">
+      <img
+        class="img-fluid w-50"
+        src="../assets/img/IMG_1679.jpg"
+        alt="Foto do aluno"
+      />
+    </div>
+
+    <!-- Lado Direito (16%) -->
+    <div class="col-4 text-end">
+      <span> Nome: José Lizandro Eufrasio de Melo </span>
+    </div>
+  </div>
   <div id="corpo" class="row">
     <div
       id="display"
       #display
       class="col-12 h-25 d-flex align-items-end justify-content-end pe-4"
     >
-      <span class="resultado">{{ valueDisplay }}</span>
+      <span class="resultado text-black">{{ valueDisplay }}</span>
     </div>
     <div #containerTeclas class="h-75">
       <div
@@ -345,6 +367,27 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container-fluid row">
+    <!-- Lado Esquerdo (20%) -->
+    <div class="col-4 float-left d-flex flex-column">
+      <span> Turma ADS0303N </span>
+      <span> Turno: noite </span>
+      <span> Unidade: Bonsucesso </span>
+    </div>
+    <div class="col-4 text-center ">
+      <span> Nome: José Lizandro Eufrasio de Melo </span>
+    </div>
+    <!-- Lado Centro (8%) -->
+    <div class="col-4 float-left text-end ">
+      <img
+        class="img-fluid w-50"
+        src="../assets/img/IMG_1679.jpg"
+        alt="Foto do aluno"
+      />
+    </div>
+
+    <!-- Lado Direito (16%) -->
   </div>
 </main>
 
